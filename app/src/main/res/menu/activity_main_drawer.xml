@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_baseline_bubble_chart_24"
+            android:title="@string/category" />
+        <item
+            android:id="@+id/nav_bucket_list"
+            android:icon="@drawable/ic_baseline_playlist_add_check_24"
+            android:title="@string/bucketlist" />
+        <item
+            android:id="@+id/nav_choose_destination"
+            android:icon="@drawable/ic_baseline_airplane_ticket_24"
+            android:title="@string/Choose" />
+
+    </group>
+</menu>

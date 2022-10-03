@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.choose_destination.ChooseDestinationFragment">
+
+
+    <ImageView
+        android:id="@+id/survey_img"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/survey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".0" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survey_img">
+
+        <TextView
+            android:id="@+id/text_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/david_libre_bold"
+            android:text="Give us some answers and we will give you your perfect vacation!"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/david_libre_bold"
+        android:text="I'm traveling with:"
+        android:textColor="@color/dark_blue"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout" />
+
+    <RadioButton
+        android:id="@+id/rbsolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Solo traveler"
+        android:fontFamily="@font/david_libre_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question1" />
+
+    <RadioButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/rbcouple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:text="Couple vacation"
+        android:fontFamily="@font/david_libre_bold"
+        app:layout_constraintStart_toEndOf="@+id/rbsolo"
+        app:layout_constraintTop_toBottomOf="@+id/question1" />
+
+    <RadioButton
+        android:id="@+id/rbfamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Family vacation"
+        android:fontFamily="@font/david_libre_bold"
+        app:layout_constraintStart_toEndOf="@+id/rbfriends"
+        app:layout_constraintTop_toBottomOf="@+id/rbcouple" />
+
+    <RadioButton
+        android:id="@+id/rbfriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Friends vacation"
+        android:fontFamily="@font/david_libre_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbsolo" />
+
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/david_libre_bold"
+        android:text="My favourite season for traveling is:"
+        android:textColor="@color/dark_blue"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbfriends" />
+
+    <RadioButton
+        android:id="@+id/summerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Summer season"
+        android:fontFamily="@font/david_libre_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question2" />
+
+    <RadioButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/springbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:text="Spring season"
+        android:fontFamily="@font/david_libre_bold"
+        app:layout_constraintStart_toEndOf="@+id/summerbtn"
+        app:layout_constraintTop_toBottomOf="@+id/question2" />
+
+    <RadioButton
+        android:id="@+id/winterbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:fontFamily="@font/david_libre_bold"
+        android:text="Winter season"
+        app:layout_constraintStart_toEndOf="@+id/fallbtn"
+        app:layout_constraintTop_toBottomOf="@+id/springbtn" />
+
+    <RadioButton
+        android:id="@+id/fallbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Fall season"
+        android:fontFamily="@font/david_libre_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summerbtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/commit_btn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Commit"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winterbtn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/survey_img" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/survey_img" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

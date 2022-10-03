@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/david_libre_bold</item>
+        <item>@font/libre_display</item>
+        <item>@font/radley_italic</item>
+    </array>
+</resources>
